@@ -27,8 +27,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "push": "gh-pages -d public -b master",
-    "deploy": "yarn build && yarn push",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
