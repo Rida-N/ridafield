@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Rida's Field`,
+    title: `Rida Field`,
     description: `One who makes no mistakes makes nothing at all.`,
     author: `@RidaZhang`,
   },
