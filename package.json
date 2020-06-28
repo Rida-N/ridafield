@@ -32,7 +32,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "deploy": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/Rida-N/ridafield.git",
+    "deploy": "gatsby build && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/Rida-N/ridafield.git",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
