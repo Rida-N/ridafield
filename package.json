@@ -27,8 +27,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "push": "gh-pages -d public -b master",
-    "deploy": "yarn build && yarn push",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/Rida-N/ridafield.git",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
