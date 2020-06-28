@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Rida's Field`,
-    description: `One who makes no mistakes makes nothing at all.`,
+    description: `One who makes no mistakes makes nothing at all`,
     author: `@RidaZhang`,
   },
   plugins: [
