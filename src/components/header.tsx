@@ -1,12 +1,16 @@
 import { Link } from "gatsby"
 import React from "react"
 
-type Props = {
-  siteMetadata: { siteTitle: string; description: string }
-}
+type Props = { title: string; description: string }
 
-const Header: React.FC<Props> = ({ siteMetadata }) => {
+const Header: React.FC<Props> = siteMetadata => {
   const logo = require("../images/ridafield.ico")
+
+  const style_p = {
+    color: "gray",
+    fontSize: "1.5rem",
+    margin: "1rem",
+  }
 
   return (
     <header
@@ -41,12 +45,18 @@ const Header: React.FC<Props> = ({ siteMetadata }) => {
                 margin: "1rem",
               }}
             >
-              {siteMetadata.siteTitle}
+              {siteMetadata.title}
             </Link>
-            <h1>{siteMetadata.description}</h1>
+            <p style={style_p}>{siteMetadata.description}</p>
             {/* <h1>You need to understand the durable, lasting insights underlying how things work. Technologies come and technologies go, but insight is forever.</h1> */}
-            <p>
-              Fragments of technical study notes, art works, and all sorts of
+            <p
+              style={{
+                color: "#c1c1c1",
+                fontSize: "1rem",
+                margin: "1rem",
+              }}
+            >
+              - Fragments of technical study notes, art works, and all sorts of
               mind-wandering.
             </p>
           </div>
