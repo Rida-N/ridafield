@@ -1,35 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "rida-field",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
-    "gatsby": "^2.22.15",
-    "gatsby-image": "^2.4.5",
-    "gatsby-plugin-manifest": "^2.4.9",
-    "gatsby-plugin-offline": "^3.2.7",
-    "gatsby-plugin-react-helmet": "^3.3.2",
-    "gatsby-plugin-sharp": "^2.6.9",
-    "gatsby-source-filesystem": "^2.3.8",
-    "gatsby-transformer-sharp": "^2.5.3",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
-  },
-  "devDependencies": {
-    "babel-jest": "^26.1.0",
-    "babel-preset-gatsby": "^0.4.12",
-    "gh-pages": "^3.0.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^26.1.0",
-    "prettier": "2.0.5",
-    "react-test-renderer": "^16.13.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
+  "author": "nowthursday@gmail.com>",
   "license": "MIT",
   "scripts": {
     "deploy": "gatsby build && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/Rida-N/ridafield.git",
@@ -39,7 +13,39 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest"
+    "test": "jest",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --ignore-path .gitignore --ext .ts,.tsx,.js"
+  },
+  "dependencies": {
+    "@types/react-helmet": "^6.1.0",
+    "gatsby": "^2.22.15",
+    "gatsby-image": "^2.4.5",
+    "gatsby-plugin-graphql-codegen": "^2.7.1",
+    "gatsby-plugin-manifest": "^2.4.9",
+    "gatsby-plugin-offline": "^3.2.7",
+    "gatsby-plugin-react-helmet": "^3.3.2",
+    "gatsby-plugin-sharp": "^2.6.9",
+    "gatsby-plugin-typescript": "^2.4.18",
+    "gatsby-source-filesystem": "^2.3.8",
+    "gatsby-transformer-sharp": "^2.5.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "typescript": "^4.0.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "devDependencies": {
+    "babel-jest": "^26.1.0",
+    "babel-preset-gatsby": "^0.4.12",
+    "gh-pages": "^3.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.1.0",
+    "prettier": "2.0.5",
+    "react-test-renderer": "^16.13.1"
   },
   "repository": {
     "type": "git",
