@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"3nJV":function(n,t,e){"use strict";e.r(t);var c=e("q1tI"),i=e.n(c);t.default=function(){return i.a.createElement("div",null,"test Fibonacci")}}}]);
+//# sourceMappingURL=component---src-pages-fibonacci-tsx-7a8937122832ba3015eb.js.map
